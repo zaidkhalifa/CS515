@@ -1,0 +1,104 @@
+# Sorting Algorithm Benchmark Results
+
+## Test Data Description
+
+1. **Random**: Lists with randomly generated integers.
+2. **Nearly Sorted**: Lists that are almost sorted with about 10% of elements out of place.
+3. **Reversed**: Lists in reverse sorted order (worst case for most sorting algorithms).
+4. **Few Unique**: Lists with many repeated values and only a few unique items.
+5. **Almost Sorted with Outliers**: Mostly sorted lists with a few outliers at wrong positions.
+
+## Benchmark Results
+
+List Type                      Algorithm       Comparisons     Swaps           Time (s)       
+------------------------------ --------------- --------------- --------------- ---------------
+
+**Random (size 100)**
+
+                               Bubble Sort     4950            2298            0.001043
+                               Insertion Sort  2394            2298            0.001038
+                               Selection Sort  4950            100             0.000000
+                               Quick Sort      621             413             0.001036
+                               Merge Sort      533             672             0.000000
+                               Counting Sort   100             200             0.000000
+
+**Nearly Sorted (size 100)**
+
+                               Bubble Sort     4950            85              0.000000
+                               Insertion Sort  184             85              0.000000
+                               Selection Sort  4950            100             0.001049
+                               Quick Sort      2497            2533            0.000000
+                               Merge Sort      389             672             0.001034
+                               Counting Sort   100             200             0.000000
+
+**Reversed (size 100)**
+
+                               Bubble Sort     4950            4950            0.001036
+                               Insertion Sort  4950            4950            0.001008
+                               Selection Sort  4950            100             0.000506
+                               Quick Sort      4950            2549            0.000000
+                               Merge Sort      316             672             0.001007
+                               Counting Sort   100             200             0.000000
+
+**Few Unique (size 100)**
+
+                               Bubble Sort     4950            2112            0.000508
+                               Insertion Sort  2209            2112            0.000000
+                               Selection Sort  4950            100             0.000000
+                               Quick Sort      868             801             0.000000
+                               Merge Sort      539             672             0.000000
+                               Counting Sort   100             200             0.001036
+
+**Almost Sorted with Outliers (size 100)**
+
+                               Bubble Sort     4950            945             0.000000
+                               Insertion Sort  1034            945             0.000000
+                               Selection Sort  4950            100             0.001089
+                               Quick Sort      4950            4574            0.001067
+                               Merge Sort      441             672             0.000000
+                               Counting Sort   100             200             0.000000
+
+**Random (size 500)**
+
+                               Bubble Sort     124750          57889           0.020392
+                               Insertion Sort  58382           57889           0.015034
+                               Selection Sort  124750          500             0.011612
+                               Quick Sort      4958            2832            0.001518
+                               Merge Sort      3838            4488            0.002076
+                               Counting Sort   500             1000            0.000000
+
+**Nearly Sorted (size 500)**
+
+                               Bubble Sort     124750          422             0.013742
+                               Insertion Sort  921             422             0.001042
+                               Selection Sort  124750          500             0.014155
+                               Quick Sort      76752           76931           0.019895
+                               Merge Sort      2453            4488            0.001040
+                               Counting Sort   500             1000            0.000000
+
+**Reversed (size 500)**
+
+                               Bubble Sort     124750          124750          0.029048
+                               Insertion Sort  124750          124750          0.033628
+                               Selection Sort  124750          500             0.013921
+                               Quick Sort      124750          62749           0.024836
+                               Merge Sort      2216            4488            0.001585
+                               Counting Sort   500             1000            0.000000
+
+**Few Unique (size 500)**
+
+                               Bubble Sort     124750          54294           0.021716
+                               Insertion Sort  54792           54294           0.014843
+                               Selection Sort  124750          500             0.013183
+                               Quick Sort      14621           14219           0.003090
+                               Merge Sort      3764            4488            0.001564
+                               Counting Sort   500             1000            0.000000
+
+**Almost Sorted with Outliers (size 500)**
+
+                               Bubble Sort     124750          4945            0.016352
+                               Insertion Sort  5434            4945            0.002097
+                               Selection Sort  124750          500             0.013914
+                               Quick Sort      124750          122774          0.034200
+                               Merge Sort      2758            4488            0.001055
+                               Counting Sort   500             1000            0.000000
